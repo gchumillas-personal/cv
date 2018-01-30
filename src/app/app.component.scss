@@ -1,8 +1,13 @@
 @import '../assets/metrics';
 @import '../assets/palette';
 
+.container {
+  padding: 0;
+}
+
 .header {
   background-color: $primary-text-color;
+  border-bottom: .5rem solid $accent-color;
   color: $primary-color-light;
   padding: 1rem 1.6rem;
 
@@ -15,21 +20,26 @@
   }
 }
 
+.body {
+  padding: 2rem;
+}
+
 .pictures {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
 
   .item {
-    margin: 1.5rem;
+    &:not(:first-child) {
+      display: none;
+    }
   }
 
   img {
-    width: 25rem;
+    width: 100%;
   }
 
   label {
+    display: none;
     font-weight: normal;
   }
 }

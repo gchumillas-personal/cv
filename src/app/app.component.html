@@ -4,19 +4,21 @@
     <div>Software Developer</div>
   </div>
 
-  <div class="section">
-    Mi nombre es Gonzalo y me dedico al desarrollo de software.
-  </div>
+  <div class="body">
+    <div class="section">
+      Mi nombre es Gonzalo y me dedico al desarrollo de software.
+    </div>
 
-  <div *ngFor="let section of sections" class="section">
-    <h2>{{section.title}}</h2>
-    <div class="description">{{section.description}}</div>
-    <div class="pictures">
-      <div *ngFor="let snapshot of section.snapshots" class="item">
-        <a [href]="getFullPath(snapshot.src)" target="_blank">
-          <img [src]="getFullPath(snapshot.src)" [alt]="snapshot.title">
-        </a>
-        <label>{{snapshot.title}}</label>
+    <div *ngFor="let section of sections" class="section">
+      <h2>{{section.title}}</h2>
+      <div class="description">{{section.description}}</div>
+      <div class="pictures">
+        <div *ngFor="let snapshot of section.snapshots" class="item">
+          <a [href]="getFullPath(snapshot.src)" target="_blank">
+            <img [src]="getFullPath(snapshot.src)" [alt]="snapshot.title">
+          </a>
+          <label>{{snapshot.title}}</label>
+        </div>
       </div>
     </div>
   </div>
