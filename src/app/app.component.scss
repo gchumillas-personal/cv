@@ -1,0 +1,35 @@
+@import '../assets/metrics';
+@import '../assets/palette';
+
+.header {
+  background-color: $primary-text-color;
+  color: $primary-color-light;
+  padding: 1rem 1.6rem;
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  div {
+    font-size: $font-size-h4;
+  }
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
+  .item {
+    margin: 1.5rem;
+  }
+
+  img {
+    width: 25rem;
+  }
+
+  label {
+    font-weight: normal;
+  }
+}
