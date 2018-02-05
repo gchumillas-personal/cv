@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { environment as env } from '../environments/environment';
+import { SectionModel } from './model';
 
 @Component({
   selector: 'app-root',
@@ -7,32 +8,72 @@ import { environment as env } from '../environments/environment';
   styleUrls: ['./app.component.scss', './app.component.tablet.scss']
 })
 export class AppComponent {
-  title = 'app';
-  description = `
-    Durante más de quince años me he dedicado al desarrollo de aplicaciones y
-    sitios web. Aunque he programado en diferentes plataformas y lenguajes,
-    como Delphi o Java, actualmente centro mi atención en Angular y TypeScript,
-    una combinación ideal para el desarrollo de aplicaciones web.
+  bio: SectionModel = {
+    description: `
+    Durante más de quince años me he dedicado al desarrollo de aplicaciones
+    de gestión y sitios web. Aunque he programado en diferentes plataformas
+    y lenguajes, como Delphi o Java, actualmente centro mi atención en
+    Angular y TypeScript, una combinación ideal para el desarrollo de
+    aplicaciones web. No dude en contactar si desea
+    conocer más información.`,
+    tags: [
+      {
+        label: 'GitHub',
+        text: 'https://github.com/gchumillas',
+        link: 'https://github.com/gchumillas',
+        isExternalLink: true
+      },
+      {
+        label: 'LinkedIn',
+        text: 'https://linkedin.com/in/gonzalo-chumillas-21326110b/',
+        link: 'https://linkedin.com/in/gonzalo-chumillas-21326110b/',
+        isExternalLink: true
+      },
+      {
+        label: 'Skype',
+        text: '685 510117',
+        link: 'skype:gonzalo.chumillas',
+        icon: 'fa-phone'
+      },
+      {
+        label: 'Email',
+        text: 'gonzalo.chumillas@email.com',
+        link: 'mailto:gonzalo.chumillas@email.com',
+        icon: 'fa-envelope'
+      }
+    ]
+  };
 
-    No dude contactar si desea conocer más información`;
-
-  sections = [
+  sections: SectionModel[] = [
     {
       title: 'Gestor de Contenidos',
       description: `Aplicación altamente configurable para gestionar el contenido de cualquier sitio web,
       sin importar cómo haya sido desarrollado. Esta aplicación nació de la necesidad de crear un gestor
       de contenidos universal. Entre muchas de sus funcionalidades, permite la edición de textos, imágenes y vídeos.`,
-      client: {
-        name: 'Axis-Studios',
-        url: 'http://www.axis-studios.com',
-        demo: 'http://axistools.gchumillas.com'
-      },
+      tags: [
+        {
+          label: 'Cliente',
+          text: 'Axis-Studios',
+          link: 'http://www.axis-studios.com',
+          isExternalLink: true
+        },
+        {
+          label: 'Demo',
+          text: 'http://cms.gchumilas.com',
+          link: 'http://cms.gchumilas.com',
+          isExternalLink: true
+        },
+        {
+          label: 'Tecnologías',
+          text: 'PHP, MySQL, jQuery, XML, CSS3, HTML5'
+        }
+      ],
       snapshots: [
-        { src: 'data/images/axistools1.png', title: 'Listado de registros' },
-        { src: 'data/images/axistools2.png', title: 'Editor de registros' },
-        { src: 'data/images/axistools3.png', title: 'Editor de imágenes' }
+        { src: 'data/images/axistools1.png', caption: 'Listado de registros' },
+        { src: 'data/images/axistools2.png', caption: 'Editor de registros' },
+        { src: 'data/images/axistools3.png', caption: 'Editor de imágenes' }
       ]
-    },
+    }
     /*
     {
       title: 'Organizador de fotografías',

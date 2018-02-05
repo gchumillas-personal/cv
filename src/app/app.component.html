@@ -6,64 +6,14 @@
 
   <div class="body">
     <div class="section">
-      <p>
-        Durante más de quince años me he dedicado al desarrollo de aplicaciones y
-        sitios web. Aunque he programado en diferentes plataformas y lenguajes,
-        como Delphi o Java, actualmente centro mi atención en Angular y
-        TypeScript, una combinación ideal para el desarrollo de aplicaciones web.
-        No dude <a href="mailto:gonzalo.chumillas@gmail.com">contactar</a>
-        si desea conocer más información.
-      </p>
-      <ul class="info">
-        <li>
-          <label>GitHub:</label>
-          <span><a href="http://github.com/gchumillas">https://github.com/gchumillas</a></span>
-        </li>
-        <li>
-          <label>LinkedIn:</label>
-          <span>
-            <a href="https://www.linkedin.com/in/gonzalo-chumillas-21326110b/">
-              https://linkedin.com/in/gonzalo-chumillas-21326110b/
-            </a>
-          </span>
-        </li>
-        <li>
-          <label>Skype:</label>
-          <span>
-            <a href="skype:gonzalo.chumillas">
-              685 510117 <i class="fa fa-phone"></i>
-            </a>
-          </span>
-        </li>
-        <li>
-          <label>Email:</label>
-          <span>
-            <a href="mailto:gonzalo.chumillas@gmail.com">
-              gonzalo.chumillas@email.com
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </a>
-          </span>
-        </li>
-      </ul>
+      <p>{{bio.description}}</p>
+      <app-tags [tags]="bio.tags"></app-tags>
     </div>
 
     <div *ngFor="let section of sections" class="section">
       <h2>{{section.title}}</h2>
-      <ul class="info">
-        <li>
-          <label>Cliente:</label>
-          <span><a href="http://www.axis-studios.com">Axis-Studios</a></span>
-        </li>
-        <li>
-          <label>Demo:</label>
-          <span><a href="#">http://cms.gchumilas.com</a></span>
-        </li>
-        <li>
-          <label>Tecnologías:</label>
-          <span>PHP, MySQL, jQuery, XML, CSS3, HTML5</span>
-        </li>
-      </ul>
-      <div class="description">{{section.description}}</div>
+      <app-tags [tags]="section.tags"></app-tags>
+      <p>{{section.description}}</p>
       <div class="pictures">
         <div *ngFor="let snapshot of section.snapshots" class="item">
           <a [href]="getFullPath(snapshot.src)" target="_blank">
