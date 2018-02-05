@@ -3,8 +3,8 @@ import { TagModel } from './model';
 
 @Component({
   selector: 'app-tags',
-  templateUrl: './app.tags-component.html',
-  styleUrls: ['./app.tags-component.scss']
+  templateUrl: './tags.component.html',
+  styleUrls: ['./tags.component.scss']
 })
 export class TagsComponent {
   @Input()

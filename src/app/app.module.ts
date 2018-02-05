@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TagsComponent } from './app.tags-component';
+import { TagsComponent } from './tags.component';
 
 
 @NgModule({
