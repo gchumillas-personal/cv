@@ -1,0 +1,30 @@
+@import '../assets/metrics';
+@import '../assets/palette';
+
+@media(min-width: $small-size) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .pictures {
+    text-align: center;
+
+    .item {
+      border: 1px solid $divider-color;
+      margin: 0 1rem 1rem 0;
+      padding: .5rem;
+
+      &:not(:first-child) {
+        display: block;
+      }
+    }
+
+    img {
+      width: 28rem;
+    }
+
+    label {
+      display: block;
+    }
+  }
+}

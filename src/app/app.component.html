@@ -6,11 +6,46 @@
 
   <div class="body">
     <div class="section">
-      Mi nombre es Gonzalo y me dedico al desarrollo de software.
+      <p>
+        Durante más de quince años me he dedicado al desarrollo de aplicaciones y
+        sitios web. Aunque he programado en diferentes plataformas y lenguajes,
+        como Delphi o Java, actualmente centro mi atención en Angular y
+        TypeScript, una combinación ideal para el desarrollo de aplicaciones web.
+        No dude <a href="mailto:gonzalo.chumillas@gmail.com">contactar</a>
+        si desea conocer más información.
+      </p>
+      <ul class="info">
+        <li>
+          <label>GitHub:</label>
+          <span><a href="http://github.com/gchumillas">https://github.com/gchumillas</a></span>
+        </li>
+        <li>
+          <label>LinkedIn:</label>
+          <span><a href="https://www.linkedin.com/in/gonzalo-chumillas-21326110b/">https://www.linkedin.com/in/gonzalo-chumillas-21326110b/</a></span>
+        </li>
+        <li>
+          <label>Email:</label>
+          <span><a href="mailto:gonzalo.chumillas@gmail.com">Gonzalo Chumillas</a></span>
+        </li>
+      </ul>
     </div>
 
     <div *ngFor="let section of sections" class="section">
       <h2>{{section.title}}</h2>
+      <ul class="info">
+        <li>
+          <span>Cliente:</span>
+          <span><a href="http://www.axis-studios.com">Axis-Studios</a></span>
+        </li>
+        <li>
+          <span>Demo:</span>
+          <span><a href="#">http://cms.gchumilas.com</a></span>
+        </li>
+        <li>
+          <span>Tecnologías:</span>
+          <span>PHP, MySQL, jQuery, XML, CSS3, HTML5</span>
+        </li>
+      </ul>
       <div class="description">{{section.description}}</div>
       <div class="pictures">
         <div *ngFor="let snapshot of section.snapshots" class="item">
