@@ -72,21 +72,27 @@ export class AppComponent {
         { src: 'data/images/axistools2.png', caption: 'Editor de registros' },
         { src: 'data/images/axistools3.png', caption: 'Editor de imágenes' }
       ]
-    }
-    /*
+    },
     {
       title: 'Organizador de fotografías',
       description: 'blah blah blah...',
-      client: {
-        name: 'Projecto Personal',
-        url: 'http://www.petitphotobox.com',
-        demo: 'axistools.gchumillas.com'
-      },
+      tags: [
+        {
+          label: 'Cliente',
+          text: 'Proyecto personal',
+          isExternalLink: true
+        },
+        {
+          label: 'Demo',
+          text: 'http://www.petitphotobox.com',
+          isExternalLink: true
+        }
+      ],
       snapshots: [
-        { src: 'data/images/photobox1.png', title: 'Categoría' },
-        { src: 'data/images/photobox2.png', title: 'Nueva Categoría' },
-        { src: 'data/images/photobox3.png', title: 'Subir imágenes' },
+        { src: 'data/images/photobox1.png', caption: 'Categoría' },
+        { src: 'data/images/photobox2.png', caption: 'Nueva Categoría' },
+        { src: 'data/images/photobox3.png', caption: 'Subir imágenes' },
       ]
-    }*/
+    }
   ];
 }
