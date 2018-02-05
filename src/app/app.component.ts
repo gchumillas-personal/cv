@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SectionModel } from './model';
+import { config } from '../config';
 
 @Component({
   selector: 'app-root',
@@ -30,14 +31,14 @@ export class AppComponent {
       },
       {
         label: 'Skype',
-        text: '685 510117',
-        link: 'skype:gonzalo.chumillas',
+        text: config.phone,
+        link: `skype:${config.skypeId}`,
         icon: 'fa-phone'
       },
       {
         label: 'Email',
-        text: 'gonzalo.chumillas@email.com',
-        link: 'mailto:gonzalo.chumillas@email.com',
+        text: config.email,
+        link: `mailto:${config.email}`,
         icon: 'fa-envelope'
       }
     ]

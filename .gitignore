@@ -2,6 +2,7 @@
 
 /logs
 /data
+/src/config.ts
 
 # compiled output
 /dist
