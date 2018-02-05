@@ -21,7 +21,8 @@
       "styles": [
         "styles.scss",
         "../node_modules/normalize.css/normalize.css",
-        "../node_modules/milligram/dist/milligram.min.css"
+        "../node_modules/milligram/dist/milligram.min.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
