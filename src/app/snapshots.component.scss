@@ -1,6 +1,27 @@
 @import '../assets/metrics';
 @import '../assets/palette';
 
+.pictures {
+  display: flex;
+  // flex-wrap: wrap;
+
+  .item {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+
+  img {
+    display: block;
+    // width: 100%;
+  }
+
+  label {
+    display: none;
+    font-weight: normal;
+  }
+}
+
 @media(min-width: $small-size) {
   .container {
     padding: 0 2rem;

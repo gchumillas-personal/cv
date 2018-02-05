@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { environment as env } from '../environments/environment';
 import { SectionModel } from './model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss', './app.component.tablet.scss']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   bio: SectionModel = {
@@ -90,8 +89,4 @@ export class AppComponent {
       ]
     }*/
   ];
-
-  getFullPath(src: string) {
-    return [env.apiUrl, src].join('/');
-  }
 }

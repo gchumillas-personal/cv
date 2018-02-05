@@ -14,14 +14,7 @@
       <h2>{{section.title}}</h2>
       <app-tags [tags]="section.tags"></app-tags>
       <p>{{section.description}}</p>
-      <div class="pictures">
-        <div *ngFor="let snapshot of section.snapshots" class="item">
-          <a [href]="getFullPath(snapshot.src)" target="_blank">
-            <img [src]="getFullPath(snapshot.src)" [alt]="snapshot.title">
-          </a>
-          <label>{{snapshot.title}}</label>
-        </div>
-      </div>
+      <app-snapshots [snapshots]="section.snapshots"></app-snapshots>
     </div>
   </div>
 </div>
