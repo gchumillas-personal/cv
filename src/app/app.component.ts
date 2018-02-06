@@ -69,7 +69,7 @@ export class AppComponent {
         },
         {
           label: 'Demo',
-          text: 'http://gchumilas.com/cms',
+          text: 'http://gchumilas.com/cms (username, password = demo, demo)',
           link: 'http://gchumilas.com/cms',
           isExternalLink: true
         },
