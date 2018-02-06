@@ -14,9 +14,11 @@ export class AppComponent {
     description: `
     Durante más de quince años me he dedicado al desarrollo de aplicaciones
     de gestión y sitios web. Aunque he programado en diferentes plataformas
-    y lenguajes, como Delphi o Java, actualmente centro mi atención en
-    Angular y TypeScript, una combinación ideal para el desarrollo de
-    aplicaciones web. No dude en contactar si desea
+    y lenguajes, como <strong>Delphi</strong>, <strong>Java</strong> o
+    <strong>PHP</strong>, actualmente centro mi atención en
+    <strong>Angular</strong> y <strong>TypeScript</strong>, una combinación
+    ideal para el desarrollo de aplicaciones web. No dude en
+    <a href="mailto:${config.email}">contactar</a> si desea
     conocer más información.`,
     tags: [
       {
@@ -24,7 +26,7 @@ export class AppComponent {
         text: 'https://github.com/gchumillas',
         link: 'https://github.com/gchumillas',
         isExternalLink: true,
-        icon: 'fa-linkedin',
+        icon: 'fa-github',
         isIconVisible: false
       },
       {
@@ -32,7 +34,7 @@ export class AppComponent {
         text: 'https://linkedin.com/in/gonzalo-chumillas-21326110b/',
         link: 'https://linkedin.com/in/gonzalo-chumillas-21326110b/',
         isExternalLink: true,
-        icon: 'fa-github',
+        icon: 'fa-linkedin',
         isIconVisible: false
       },
       {
