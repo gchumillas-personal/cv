@@ -33,7 +33,7 @@
     .item {
       border: 1px solid $divider-color;
       margin: 0 1rem 1rem 0;
-      padding: .5rem;
+      padding: .5rem .5rem 0;
 
       &:not(:first-child) {
         display: block;
@@ -46,6 +46,8 @@
 
     label {
       display: block;
+      line-height: 2.5;
+      margin: 0;
     }
   }
 }
