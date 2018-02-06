@@ -1,7 +1,7 @@
 <div class="pictures">
   <div *ngFor="let snapshot of snapshots" class="item">
     <a [href]="getFullPath(snapshot.src)" target="_blank">
-      <img [src]="getFullPath(snapshot.src)" [alt]="snapshot.title">
+      <img [src]="getFullPath(snapshot.src)" [alt]="snapshot.caption">
     </a>
     <label>{{snapshot.caption}}</label>
   </div>
