@@ -84,7 +84,10 @@ export class AppComponent {
     },
     {
       title: 'Organizador de fotografías',
-      description: 'blah blah blah...',
+      description: `Me entusiasma la fotografía y, al no encontrar un software
+      adaptado a mis necesidades, desarrollé esta aplicación para gestionar
+      mis fotografías. La aplicación fue desarrollada principalmente
+      en Angular y TypeScript.`,
       tags: [
         {
           label: 'Cliente',
