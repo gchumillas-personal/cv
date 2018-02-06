@@ -62,13 +62,13 @@ export class AppComponent {
         {
           label: 'Cliente',
           text: 'Axis-Studios',
-          link: 'http://www.axis-studios.com',
+          link: 'http://axis-studios.com',
           isExternalLink: true
         },
         {
           label: 'Demo',
-          text: 'http://cms.gchumilas.com',
-          link: 'http://cms.gchumilas.com',
+          text: 'http://gchumilas.com/cms',
+          link: 'http://gchumilas.com/cms',
           isExternalLink: true
         },
         {
@@ -92,9 +92,14 @@ export class AppComponent {
           isExternalLink: true
         },
         {
-          label: 'Demo',
-          text: 'http://www.petitphotobox.com',
+          label: 'Repositorio',
+          text: 'gchumillas/petitphotobox',
+          link: 'https://github.com/gchumillas/petitphotobox',
           isExternalLink: true
+        },
+        {
+          label: 'Tecnologías',
+          text: 'Angular, TypeScript, PHP, MySQL, CSS3, HTML5'
         }
       ],
       snapshots: [
