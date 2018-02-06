@@ -5,6 +5,8 @@
   display: flex;
 
   .item {
+    width: 100%;
+
     &:not(:first-child) {
       display: none;
     }
@@ -30,8 +32,8 @@
 
     .item {
       border: 1px solid $divider-color;
-      margin: 0 1rem 1rem 0;
-      padding: .5rem .5rem 0;
+      margin: 2rem 1rem;
+      padding: 1rem 1rem 0;
 
       &:not(:first-child) {
         display: block;
