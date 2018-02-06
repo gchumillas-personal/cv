@@ -8,6 +8,8 @@ import { config } from '../config';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  email = config.email;
+  phone = config.phone;
   bio: SectionModel = {
     description: `
     Durante más de quince años me he dedicado al desarrollo de aplicaciones
