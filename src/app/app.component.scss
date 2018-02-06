@@ -33,3 +33,38 @@
 .section {
   margin-bottom: 4rem;
 }
+
+.bio {
+  margin-bottom: 2rem;
+
+  app-tags {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+
+    li {
+      font-size: $font-size-h2;
+      margin: 0;
+      padding: 1rem 1.5rem 0;
+    }
+  }
+}
+
+@media(min-width: $small-size) {
+  .bio {
+    margin-bottom: 4rem;
+
+    app-tags {
+      display: inline;
+    }
+
+    .links {
+      display: none;
+    }
+  }
+}

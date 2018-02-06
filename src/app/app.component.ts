@@ -23,25 +23,31 @@ export class AppComponent {
         label: 'GitHub',
         text: 'https://github.com/gchumillas',
         link: 'https://github.com/gchumillas',
-        isExternalLink: true
+        isExternalLink: true,
+        icon: 'fa-linkedin',
+        isIconVisible: false
       },
       {
         label: 'LinkedIn',
         text: 'https://linkedin.com/in/gonzalo-chumillas-21326110b/',
         link: 'https://linkedin.com/in/gonzalo-chumillas-21326110b/',
-        isExternalLink: true
+        isExternalLink: true,
+        icon: 'fa-github',
+        isIconVisible: false
       },
       {
         label: 'Skype',
         text: config.phone,
         link: `skype:${config.skypeId}`,
-        icon: 'fa-phone'
+        icon: 'fa-phone',
+        isIconVisible: true
       },
       {
         label: 'Email',
         text: config.email,
         link: `mailto:${config.email}`,
-        icon: 'fa-envelope'
+        icon: 'fa-envelope',
+        isIconVisible: true
       }
     ]
   };

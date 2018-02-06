@@ -11,6 +11,7 @@ export interface TagModel {
   link?: string;
   isExternalLink?: boolean;
   icon?: string;
+  isIconVisible?: boolean;
 }
 
 export interface SnapshotModel {

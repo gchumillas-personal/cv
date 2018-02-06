@@ -8,9 +8,16 @@
   </div>
 
   <div class="body">
-    <div class="section">
+    <div class="section bio">
       <p>{{bio.description}}</p>
       <app-tags [tags]="bio.tags"></app-tags>
+      <ul class="links">
+        <li *ngFor="let tag of bio.tags">
+          <a [href]="tag.link" [target]="tag.isExternalLink? '_blank': '_self'">
+            <i class="fa" [ngClass]="tag.icon"></i>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <div *ngFor="let section of sections" class="section">
