@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { TagModel } from './model';
 
 @Component({
@@ -9,4 +10,10 @@ import { TagModel } from './model';
 export class TagsComponent {
   @Input()
   tags: TagModel[];
+
+  constructor(private _sanitizer: DomSanitizer) { }
+
+  sanitize(url: string) {
+    return this._sanitizer.bypassSecurityTrustUrl(url);
+  }
 }

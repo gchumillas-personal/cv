@@ -2,7 +2,7 @@
   <li *ngFor="let tag of tags">
     <label>{{tag.label}}:</label>
     <span *ngIf="tag.link">
-      <a [href]="tag.link" [target]="tag.isExternalLink? '_blank': '_self'">{{tag.text}}</a>
+      <a [href]="sanitize(tag.link)" [target]="tag.isExternalLink? '_blank': '_self'">{{tag.text}}</a>
       <i *ngIf="tag.isIconVisible" class="fa" [ngClass]="tag.icon"></i>
     </span>
     <span *ngIf="!tag.link">

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { SectionModel } from './model';
 import { config } from '../config';
 
@@ -116,4 +117,10 @@ export class AppComponent {
       ]
     }
   ];
+
+  constructor(private _sanitizer: DomSanitizer) { }
+
+  sanitize(url: string) {
+    return this._sanitizer.bypassSecurityTrustUrl(url);
+  }
 }
