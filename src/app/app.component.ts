@@ -57,9 +57,11 @@ export class AppComponent {
   sections: SectionModel[] = [
     {
       title: 'Gestor de Contenidos',
-      description: `Aplicación altamente configurable para gestionar el contenido de cualquier sitio web,
-      sin importar cómo haya sido desarrollado. Esta aplicación nació de la necesidad de crear un gestor
-      de contenidos universal. Entre muchas de sus funcionalidades, permite la edición de textos, imágenes y vídeos.`,
+      description: `Aplicación altamente configurable para gestionar el
+      contenido de cualquier sitio web, sin importar cómo haya sido
+      desarrollado. Esta aplicación nació de la necesidad de crear un gestor
+      de contenidos universal. Entre muchas de sus funcionalidades, permite la
+      edición de textos, imágenes y vídeos.`,
       tags: [
         {
           label: 'Cliente',
