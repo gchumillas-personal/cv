@@ -57,6 +57,35 @@ export class AppComponent {
 
   sections: SectionModel[] = [
     {
+      title: 'Organizador de fotografías',
+      description: `Me entusiasma la fotografía y, al no encontrar un software
+      adaptado a mis necesidades, desarrollé esta aplicación para gestionar
+      mis fotografías. La aplicación fue desarrollada principalmente
+      en Angular y TypeScript.`,
+      tags: [
+        {
+          label: 'Cliente',
+          text: 'Proyecto personal',
+          isExternalLink: true
+        },
+        {
+          label: 'Repositorio',
+          text: 'gchumillas/petitphotobox',
+          link: 'https://github.com/gchumillas/petitphotobox',
+          isExternalLink: true
+        },
+        {
+          label: 'Tecnologías',
+          text: 'Angular, TypeScript, PHP, MySQL, CSS3, HTML5'
+        }
+      ],
+      snapshots: [
+        { src: 'data/images/photobox1.png', caption: 'Categoría' },
+        { src: 'data/images/photobox2.png', caption: 'Nueva Categoría' },
+        { src: 'data/images/photobox3.png', caption: 'Subir imágenes' },
+      ]
+    },
+    {
       title: 'Gestor de Contenidos',
       description: `Aplicación altamente configurable para gestionar el
       contenido de cualquier sitio web, sin importar cómo haya sido
@@ -85,35 +114,6 @@ export class AppComponent {
         { src: 'data/images/axistools1.png', caption: 'Listado de registros' },
         { src: 'data/images/axistools2.png', caption: 'Editor de registros' },
         { src: 'data/images/axistools3.png', caption: 'Editor de imágenes' }
-      ]
-    },
-    {
-      title: 'Organizador de fotografías',
-      description: `Me entusiasma la fotografía y, al no encontrar un software
-      adaptado a mis necesidades, desarrollé esta aplicación para gestionar
-      mis fotografías. La aplicación fue desarrollada principalmente
-      en Angular y TypeScript.`,
-      tags: [
-        {
-          label: 'Cliente',
-          text: 'Proyecto personal',
-          isExternalLink: true
-        },
-        {
-          label: 'Repositorio',
-          text: 'gchumillas/petitphotobox',
-          link: 'https://github.com/gchumillas/petitphotobox',
-          isExternalLink: true
-        },
-        {
-          label: 'Tecnologías',
-          text: 'Angular, TypeScript, PHP, MySQL, CSS3, HTML5'
-        }
-      ],
-      snapshots: [
-        { src: 'data/images/photobox1.png', caption: 'Categoría' },
-        { src: 'data/images/photobox2.png', caption: 'Nueva Categoría' },
-        { src: 'data/images/photobox3.png', caption: 'Subir imágenes' },
       ]
     }
   ];
