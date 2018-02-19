@@ -61,7 +61,7 @@ export class AppComponent {
       description: `Me entusiasma la fotografía y, al no encontrar un software
       adaptado a mis necesidades, desarrollé esta aplicación para gestionar
       mis fotografías. La aplicación fue desarrollada principalmente
-      en Angular y TypeScript.`,
+      en Angular y TypeScript y usa Dropbox como almacén de fotografías.`,
       tags: [
         {
           label: 'Cliente',
@@ -76,7 +76,7 @@ export class AppComponent {
         },
         {
           label: 'Tecnologías',
-          text: 'Angular, TypeScript, PHP, MySQL, CSS3, HTML5'
+          text: 'Dropbox, Angular, TypeScript, PHP, MySQL, CSS3, HTML5'
         }
       ],
       snapshots: [
